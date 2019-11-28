@@ -1,0 +1,17 @@
+{
+    "schedule": {
+        "lunch": {
+            "end_time": "13:00",
+            "start_time": "12:00"
+        },
+        "is_lunch": "on",
+        "workdays": {
+            "end_time": "17:00",
+            "start_time": "08:00"
+        }
+    },
+    "cdek_allowed": true,
+    "rupost": {
+        "rupost_allowed": true
+    }
+}

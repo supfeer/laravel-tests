@@ -1,0 +1,24 @@
+{
+    "cdek": {
+        "geo_id": null
+    },
+    "schedule": {
+        "lunch": {
+            "end_time": "13:00",
+            "start_time": "12:00"
+        },
+        "is_lunch": "on",
+        "workdays": {
+            "end_time": "17:00",
+            "start_time": "08:00"
+        }
+    },
+    "own_delivery": "on",
+    "zone": {
+        "in_city": false,
+        "delivery_radius": "10"
+    },
+    "free_delivery": {
+        "from_price": "1000"
+    }
+}

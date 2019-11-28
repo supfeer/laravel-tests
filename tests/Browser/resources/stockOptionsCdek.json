@@ -1,0 +1,11 @@
+{
+    "schedule": {
+        "workdays": {
+            "end_time": "23:00",
+            "start_time": "00:00"
+        }
+    },
+    "cdek_allowed": true,
+    "cdek_enabled": true,
+    "customer_pickup_enabled": true
+}

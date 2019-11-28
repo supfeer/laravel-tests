@@ -1,0 +1,16 @@
+{
+    "tariff_type": "fixed",
+    "geo_ids": [
+        1522867
+    ],
+    "options": {
+        "price": "123",
+        "min_days": "1",
+        "max_days": "3",
+        "free_from": "",
+        "weight_price": "",
+        "weight_min_price": "",
+        "paid_delivery": true,
+        "free_delivery": ""
+    }
+}

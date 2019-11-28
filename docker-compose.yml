@@ -16,9 +16,6 @@ services:
   chrome:
     image: selenium/standalone-chrome:3.141.59-europium
     user: ${CURRENT_UID:-1000:1000}
-    volumes:
-      - /dev/shm:/dev/shm
-      - ./tmp:/home/seluser/Downloads
     ports:
       - "5999:5999"
 

@@ -12,6 +12,12 @@ use Laravel\Dusk\Browser;
 use Laravel\Dusk\TestCase as BaseTestCase;
 
 
+/**
+ * Each browser test class should extend this
+ *
+ * Class DuskTestCase
+ * @package Tests
+ */
 abstract class DuskTestCase extends BaseTestCase
 {
     use CreatesApplication;
@@ -69,6 +75,11 @@ abstract class DuskTestCase extends BaseTestCase
         );
     }
 
+    /**
+     * Configuring to capture failure screenshots for each browser.
+     *
+     * @param $browsers
+     */
     protected function captureFailuresFor($browsers)
     {
         $browsers->each(function (Browser $browser, $key) {

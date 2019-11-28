@@ -7,7 +7,7 @@ use Tests\Browser\Pages\VideoSearchResultPage;
 use Tests\DuskTestCase;
 use Laravel\Dusk\Browser;
 
-class IndexTest extends DuskTestCase
+class VideoResultsTest extends DuskTestCase
 {
 
     public function setUp()
@@ -26,12 +26,14 @@ class IndexTest extends DuskTestCase
             $query = 'ураган';
 
             $browser->on(new VideoMainPage())
-                ->findVideoByText($query)
-                ->on(new VideoSearchResultPage())
-                ->waitForPageLoad();
-            $browser->hoverVideoPreview()
+                ->findVideoByText($query);
+
+            $browser->on(new VideoSearchResultPage())
+                ->waitForPageLoad()
+                ->hoverVideoPreview()
                 ->assertVideoPreviewIsPlaying();
 
+            $this->expectNotToPerformAssertions();
         });
     }
 }
